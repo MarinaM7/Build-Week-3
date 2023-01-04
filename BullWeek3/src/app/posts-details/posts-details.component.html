@@ -1,0 +1,22 @@
+
+
+<ng-container *ngIf="posts">
+  <!-- <p class="text-center">{{posts.id}}</p>
+  <h1 class="text-center">{{posts.title}}</h1>
+  <p class="text-center">{{posts.body}}</p> -->
+  <mat-card class="w-50 mx-auto my-5 bg-warning">
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>{{posts.title}}</mat-card-title>
+      <mat-card-subtitle>{{posts.id}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{posts.body}}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <button class="btn btn-dark m-5 rounded-end rounded-5 rounded" routerLink="/post"><i class="bi bi-backspace"></i> Torna alla lista</button>
+
+  </ng-container>
+
+
